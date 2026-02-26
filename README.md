@@ -26,3 +26,9 @@
 
 ## Pinned Versions
 See `docs/STACK.md` for the locked dependency list and install notes.
+
+## GitHub SSH (first-time setup)
+1) Add your public key in GitHub: Settings → SSH and GPG keys.
+2) Set origin and push:
+   - `git remote add origin git@github.com:USERNAME/codex_local_env_setup.git`
+   - `git push -u origin main`
