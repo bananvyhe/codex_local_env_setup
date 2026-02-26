@@ -14,3 +14,15 @@ development:
 test:
   <<: *default
   database: <%= ENV.fetch("POSTGRES_DB_TEST", "pixeltech_test") %>
+
+production:
+  url: <%= ENV.fetch("DATABASE_URL") %>
+
+  cable:
+    url: <%= ENV.fetch("DATABASE_URL") %>
+
+  queue:
+    url: <%= ENV.fetch("DATABASE_URL") %>
+
+  cache:
+    url: <%= ENV.fetch("DATABASE_URL") %>
